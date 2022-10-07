@@ -1,0 +1,58 @@
+description: |
+  Información necesaria para instrumentar el uso de la marca
+type: object
+required:
+  - colores
+  - fonts
+  - svgs
+additionalProperties: false
+properties:
+  nombre:
+    type: string
+    description: nombre de la marca
+  colores:
+    required: 
+      - caliente
+      - frio
+    type: object
+    description: Colores con nombre
+    properties:
+      caliente:
+        $ref: "#/$defs/color"
+      caliente-claro:
+        $ref: "#/$defs/color"
+      frio:
+        $ref: "#/$defs/color"
+      frio-claro:
+        $ref: "#/$defs/color"
+      frio-oscuro:
+        $ref: "#/$defs/color"
+  fonts:
+    type: object
+    properties:
+      normal:
+        $ref: "#/$defs/font"
+      fantasia:
+        $ref: "#/$defs/font"
+  svgs:
+    type: object
+    properties:
+      isotipo:
+        $ref: "#/$defs/svg"
+      logotipo:
+        $ref: "#/$defs/svg"
+$defs:
+ color:
+   type: string
+   pattern: '^#(?:[0-9a-fA-F]{3}){1,2}$'
+ font:
+   type: string
+ svg:
+   type: object
+   properties:
+     path:
+       type: string
+     classes:
+       type: array
+       items:
+         type: string

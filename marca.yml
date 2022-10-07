@@ -9,14 +9,14 @@ fonts:
   normal: Lato Family
   fantasia: Righteous
 svgs:
-  - id: isotipo
+  isotipo:
     path: isotipo.svg
-    class:
+    classes:
       - disruptiva-sun
       - disruptiva-water
-  - id: logotipo
+  logotipo:
     path: logotipo.svg
-    class:
+    classes:
       - disruptiva-sun
       - disruptiva-water
       - disruptiva-isla
