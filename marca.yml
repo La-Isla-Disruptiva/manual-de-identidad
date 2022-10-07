@@ -1,0 +1,24 @@
+nombre: La Isla Disruptiva
+colores:
+  caliente: "#fb8500"
+  caliente-claro: "#ffb703" 
+  frio: "#219ebc"
+  frio-oscuro: "#023047"
+  frio-claro: "#8ecae6"
+fonts:
+  normal: Lato Family
+  fantasia: Righteous
+svgs:
+  - id: isotipo
+    path: isotipo.svg
+    class:
+      - disruptiva-sun
+      - disruptiva-water
+  - id: logotipo
+    path: logotipo.svg
+    class:
+      - disruptiva-sun
+      - disruptiva-water
+      - disruptiva-isla
+      - disruptiva-disruptiva
+
